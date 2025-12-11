@@ -112,6 +112,109 @@ main {
   background-color: rgb(131, 131, 131);
   direction: ltr;
 }
+
+.herocontent {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left;
+    padding: 2rem 0; /* for mobile spacing */
+}
+
+.badge-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.badge-pill {
+    background-color: hsl(230, 29%, 20%); 
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 99px; 
+    text-transform: uppercase;
+}
+
+.badge-label {
+    color: hsl(230, 29%, 20%); 
+    opacity: 0.5; 
+    font-size: 1rem;
+    letter-spacing: 4px; 
+    text-transform: uppercase;
+}
+
+.herocontent h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 3rem; 
+    line-height: 1; 
+    text-transform: uppercase;
+    color: hsl(230, 29%, 20%); 
+    margin-bottom: 1.5rem;
+}
+
+.body-copy {
+    font-family: "Barlow", sans-serif; 
+    font-weight: 400;
+    font-size: 18px; 
+    line-height: 1.5;
+    color: hsl(230, 29%, 20%); 
+    opacity: 0.6; 
+    margin-bottom: 3rem;
+    max-width: 350px;
+}
+
+.cta-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.btn-primary {
+    background-color: hsl(0, 100%, 68%); 
+    color: hsl(207, 33%, 95%); 
+    border: none;
+    padding: 0.9rem 1.8rem;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.preview-label {
+    color: hsl(230, 29%, 20%); 
+    opacity: 0.5;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+    .herocontent h1 {
+        font-size: 4.5rem; 
+    }
+    
+    .herocontent {
+        padding-left: 0; 
+    }
+}
+
 @media (min-width: 560px) {
   .heroimg {
     display: flex;
